@@ -14,7 +14,7 @@ class GreetingController(val greetingService: GreetingService) {
     companion object : KLogging()
     @GetMapping("/{name}")
     fun retrieveGreeting(@PathVariable("name") name : String): String {
-        logger.info("Name is : $name")
+        logger.info("Name person is : $name")
         return greetingService.retrieveGreeting(name)
     }
     /*: String {

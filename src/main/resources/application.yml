@@ -15,3 +15,6 @@ spring:
     console:
       enabled: true
 message: Hello from default profile
+---
+server:
+  port: 9090
